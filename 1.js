@@ -68,7 +68,29 @@ console.log(result);
 for (let i = 2; i<=10; i+=2){
   console.log(i)
 }
+let str = "abcde"
+const result = []
+if (str.length % 2 != 0){
+str = str + '_'
+}
+  for(i = 0; i < str.length; i = i + 2){
+    let a = str.substring(i, i + 2)
+    result.push(a)
+}
+const robot1 = { serialNo: 1, chipVer: 12 };
 
+const robot2 = { serialNo: 4, chipVer: 12, wheels: 1 };
+
+delete robot1.serialNo
+delete robot2.serialNo
+
+let key1 = Object.keys(robot1)
+
+let key2 = Object.keys(robot2)
+
+let val1 = Object.values(robot1)
+
+let val2 = Object.values(robot2)
 
 
 
